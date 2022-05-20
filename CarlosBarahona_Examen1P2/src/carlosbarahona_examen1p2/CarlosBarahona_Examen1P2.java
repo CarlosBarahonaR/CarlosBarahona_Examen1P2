@@ -15,12 +15,14 @@ import java.util.StringTokenizer;
  */
 public class CarlosBarahona_Examen1P2 {
 
+    static ArrayList<PC> pc = new ArrayList();
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ArrayList<PC> pc = new ArrayList();
+
         Scanner leer = new Scanner(System.in);
         int opcion = 0;
         while (opcion != 3) {
@@ -678,6 +680,9 @@ public class CarlosBarahona_Examen1P2 {
                                 break;
                             }
                             case "show": {
+                                System.out.println("IP " + pc.get(posicion).getIP());
+                                System.out.println("Mascara de red " + pc.get(posicion).getMascaraRed());
+
                                 break;
                             }
                             case "exit": {
