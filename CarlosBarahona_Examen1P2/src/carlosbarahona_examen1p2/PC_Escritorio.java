@@ -65,7 +65,7 @@ public class PC_Escritorio extends PC {
     }
 
     @Override
-    public void ping(String ip, String ip2) {
+    public void ping(String ip) {
         boolean encontrado = false;
         ArrayList<PC> pc = CarlosBarahona_Examen1P2.pc;
         for (int i = 0; i < pc.size(); i++) {
@@ -96,7 +96,7 @@ public class PC_Escritorio extends PC {
                 String dB = Integer.toBinaryString(d);
                 String IPBuscarB = aB + bB + cB + dB;
 
-                StringTokenizer t3 = new StringTokenizer(ip2, ".");
+                StringTokenizer t3 = new StringTokenizer(IP, ".");
                 int a3 = Integer.parseInt(t3.nextToken());
                 int b3 = Integer.parseInt(t3.nextToken());
                 int c3 = Integer.parseInt(t3.nextToken());

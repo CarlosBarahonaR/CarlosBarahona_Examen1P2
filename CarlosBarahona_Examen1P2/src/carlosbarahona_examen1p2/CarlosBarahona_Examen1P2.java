@@ -673,10 +673,38 @@ public class CarlosBarahona_Examen1P2 {
                         System.out.print("Escribir comando:");
                         String comando = leer.next();
                         StringTokenizer t = new StringTokenizer(comando, "_");
+                        StringTokenizer t2 = new StringTokenizer(comando, "<");
+                        String b = t2.nextToken();
+                        String c = t2.nextToken();
+                        StringTokenizer t3 = new StringTokenizer(c, ">");
+                        String ip = t3.nextToken();
                         String a = t.nextToken();
 
                         switch (a) {
                             case "ping": {
+
+                                System.out.println("Ingrese la IP a la cual desea conectarse");
+                                String IP = leer.next();
+                                boolean correcto = false;
+                                while (!correcto) {
+
+                                    StringTokenizer t4 = new StringTokenizer(IP, ".");
+                                    int a4 = Integer.parseInt(t4.nextToken());
+                                    int b4 = Integer.parseInt(t4.nextToken());
+                                    int c4 = Integer.parseInt(t4.nextToken());
+                                    int d4 = Integer.parseInt(t4.nextToken());
+                                    if ((a4 >= 0 && a4 <= 255) && (b4 >= 0 && b4 <= 255)
+                                            && (c4 >= 0 && c4 <= 255) && (d4 >= 0 && d4 <= 255)) {
+                                        correcto = true;
+                                    } else {
+                                        System.out.println("Ingrese una IP correcta");
+                                        IP = leer.next();
+                                    }
+                                }
+
+                                pc.get(posicion).ping(IP);
+                                System.out.println(pc.get(posicion).getHostname() + "#");
+
                                 break;
                             }
                             case "show": {

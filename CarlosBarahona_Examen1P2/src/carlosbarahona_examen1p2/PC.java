@@ -50,6 +50,6 @@ public abstract class PC {
         return "PC{" + "IP=" + IP + ", mascaraRed=" + mascaraRed + ", hostname=" + hostname + '}';
     }
 
-    public abstract void ping(String ip, String ip2);
+    public abstract void ping(String ip);
 
 }
