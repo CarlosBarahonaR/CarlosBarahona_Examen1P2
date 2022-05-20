@@ -11,12 +11,12 @@ package carlosbarahona_examen1p2;
  */
 public class PC_Escritorio extends PC {
 
-    private int RAM;
-    private int capacidadAlmacenamiento;
+    private String RAM;
+    private String capacidadAlmacenamiento;
     private String tipoAlmacenamiento;
     private boolean tarjetaGráfica;
 
-    public PC_Escritorio(int RAM, int capacidadAlmacenamiento, String tipoAlmacenamiento, boolean tarjetaGráfica, String IP, String mascaraRed, String hostname) {
+    public PC_Escritorio(String RAM, String capacidadAlmacenamiento, String tipoAlmacenamiento, boolean tarjetaGráfica, String IP, String mascaraRed, String hostname) {
         super(IP, mascaraRed, hostname);
         this.RAM = RAM;
         this.capacidadAlmacenamiento = capacidadAlmacenamiento;
@@ -24,19 +24,19 @@ public class PC_Escritorio extends PC {
         this.tarjetaGráfica = tarjetaGráfica;
     }
 
-    public int getRAM() {
+    public String getRAM() {
         return RAM;
     }
 
-    public void setRAM(int RAM) {
+    public void setRAM(String RAM) {
         this.RAM = RAM;
     }
 
-    public int getCapacidadAlmacenamiento() {
+    public String getCapacidadAlmacenamiento() {
         return capacidadAlmacenamiento;
     }
 
-    public void setCapacidadAlmacenamiento(int capacidadAlmacenamiento) {
+    public void setCapacidadAlmacenamiento(String capacidadAlmacenamiento) {
         this.capacidadAlmacenamiento = capacidadAlmacenamiento;
     }
 
