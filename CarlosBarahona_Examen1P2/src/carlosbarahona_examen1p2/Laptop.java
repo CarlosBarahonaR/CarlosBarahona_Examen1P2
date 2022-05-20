@@ -51,4 +51,9 @@ public class Laptop extends PC {
         return "Laptop{" + "marca=" + marca + ", definicionPantalla=" + definicionPantalla + ", RGB=" + RGB + '}';
     }
 
+    @Override
+    public void ping(String ip) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

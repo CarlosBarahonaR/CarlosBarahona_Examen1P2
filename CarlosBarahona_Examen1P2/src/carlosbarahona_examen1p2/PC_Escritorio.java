@@ -61,4 +61,9 @@ public class PC_Escritorio extends PC {
         return "PC_Escritorio{" + "RAM=" + RAM + ", capacidadAlmacenamiento=" + capacidadAlmacenamiento + ", tipoAlmacenamiento=" + tipoAlmacenamiento + ", tarjetaGr\u00e1fica=" + tarjetaGráfica + '}';
     }
 
+    @Override
+    public void ping(String ip) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

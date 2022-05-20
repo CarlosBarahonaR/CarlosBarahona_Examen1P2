@@ -9,7 +9,7 @@ package carlosbarahona_examen1p2;
  *
  * @author Admin
  */
-public class PC {
+public abstract class PC {
 
     public String IP;
     public String mascaraRed;
@@ -49,5 +49,7 @@ public class PC {
     public String toString() {
         return "PC{" + "IP=" + IP + ", mascaraRed=" + mascaraRed + ", hostname=" + hostname + '}';
     }
+
+    public abstract void ping(String ip);
 
 }
